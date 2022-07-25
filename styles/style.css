@@ -1,0 +1,115 @@
+:root {
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Font-size-paragraph: 14px;
+    --family-Montserrat: "Montserrat", sans-serif;
+    --family-Fraunces: "Fraunces", serif;
+    --Weights-regular: 500;
+    --Weights-bold: 700;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--Cream);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+main {
+    background: var(--White);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 30px;
+    width: 300px;
+}
+
+img {
+    width: 300px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+section h5 {
+    letter-spacing: 5px;
+    color: var(--Dark-grayish-blue);
+    font-family: var(--family-Montserrat);
+    font-weight: var(--Weights-regular);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 34px;
+    font-family: var(--family-Fraunces);
+    color: var(--Very-dark-blue);
+    font-weight: var(--Weights-bold);
+    line-height: 34px;
+    margin-bottom: 25px;
+}
+
+article p {
+    font-size: var(--Font-size-paragraph);
+    color: var(--Dark-grayish-blue);
+    font-family: var(--family-Montserrat);
+    margin-bottom: 30px;
+}
+
+.price {
+    display: flex;
+    padding-bottom: 27px;
+}
+
+.price h2 {
+    color: var(--Dark-cyan);
+    font-family: var(--family-Fraunces);
+    font-size: 30px;
+}
+
+.price h5 {
+    position: relative;
+    top: 10px;
+    padding-left: 20px;
+    text-decoration: line-through;
+}
+
+button {
+    font-family: var(--family-Montserrat);
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 240px;
+    height: 55px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+button:hover {
+    background: hsl(157, 39%, 30%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
